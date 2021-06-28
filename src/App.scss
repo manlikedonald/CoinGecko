@@ -1,0 +1,1670 @@
+$fontSize: 15px;
+$smallerFont: 12px;
+$hrColor: #e6e6e6;
+$homeGreen: #7AB52B;
+$fontAsh: #CDCDCD;
+
+*{
+    max-width: 100%;
+    // padding: 0;
+    // margin: 0;
+    max-height: 100%;
+}
+
+.spinner {
+    margin: 30% auto;
+    // width: 70px;
+    text-align: center;
+        div {
+            width: 18px;
+            height: 18px;
+            background-color: #333;
+        
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+      
+        .bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+      
+        .bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+      
+      @-webkit-keyframes sk-bouncedelay {
+        0%, 80%, 100% { -webkit-transform: scale(0) }
+        40% { -webkit-transform: scale(1.0) }
+      }
+      
+      @keyframes sk-bouncedelay {
+        0%, 80%, 100% { 
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        } 40% { 
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+        }
+      }
+  }
+
+.nav-bar{
+    .top-nav{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 1rem 12rem;
+        .top-nav-button{
+            border-radius: .5rem;
+            border: 1px solid #7AB52B;
+            height: 2.5rem;
+            width: 7rem;
+            color: #7AB52B;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .top-nav-ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            li{
+                margin-right: 15px;
+                margin-top: -2px;
+               
+            }
+            li:hover{
+                outline: 1px solid $homeGreen;
+                color: $homeGreen;
+            }
+            .top-nav-ul-img{
+                width: .7rem;
+            }
+            .top-nav-ul-img1{
+                width: .5rem;
+            }
+            .top-nav-ul-img2{
+                width: 1.3rem;
+            }
+        }
+    }
+    .user-hover{
+        border: 1px solid $hrColor;
+        width: 12rem;
+        text-align: center;
+        margin: -2rem 75rem;
+        position: absolute;
+        z-index: 2;
+        font-size: 14px;
+        p{
+            text-decoration-color: #000;
+            span{
+                border: 1px solid red;
+                background-color: red;
+                color: #fff;
+                font-size: 8px;
+                border-radius: 3px;
+                b{
+                    margin: auto 5px;
+                }
+            }
+        }
+        
+    }
+
+    .resources-hover{
+        border: 1px solid $hrColor;
+        width: 9rem;
+        margin: -1.7rem 54rem;
+        position: absolute;
+        z-index: 2;
+        font-size: $smallerFont;
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+        cursor: pointer;
+    }
+
+    .products-hover{
+        border: 1px solid $hrColor;
+        width: 9rem;
+        margin: -1.7rem 59rem;
+        position: absolute;
+        z-index: 2;
+        font-size: $smallerFont;
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+        cursor: pointer;
+    }
+
+    .community-hover{
+        border: 1px solid $hrColor;
+        width: 9rem;
+        margin: -1.7rem 65rem;
+        position: absolute;
+        z-index: 2;
+        font-size: $smallerFont;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 3rem;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+
+    .middle-nav{
+        display: flex;
+        flex-direction: row;
+        margin: auto 12rem;
+        .coin-crow{
+            width: 3rem;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            font-size: 12px;
+            li{
+                margin: 1rem 15px;
+                flex-direction: row;
+                cursor: pointer;
+            }
+        }
+        .middle-nav-input{
+            height: 2rem;
+            margin: 1rem 2rem;
+            width: 15rem;
+            border: 1px solid #a9a9a95e;
+            border-radius: 5px;
+            outline: none;
+        }
+    }
+
+    .first-bottom-nav-hr{
+        border: 1px solid $hrColor;
+    }
+
+    .bottom-nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            // border: 1px solid #000;
+            // width: 50%;
+            margin: auto 12rem;
+            li{
+                list-style: none;
+                font-size: 12px;
+                padding-bottom: 5rem;
+            }
+            .gas{
+                width: 12px;
+            }
+            span{
+                color: #00BBD4;
+            }
+        }
+    }
+}
+
+.body{
+    margin: auto 12rem;
+    .body-top-buttons{
+        
+        display: flex;
+        flex-direction: row;
+        button{
+            background-color: #fff;
+            border: none;
+            height: 2rem;
+            cursor: pointer;
+            width: fit-content;
+            margin-right: 25px;
+            }
+        button:focus{
+            border-bottom: 3px solid #8DC646;
+        }
+    }
+    .body-top-hr{
+        border: 1px solid #e6e6e6;
+    }
+    .crypto-list{
+        title{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                margin-top: -9px;
+                font-size: $fontSize;
+            }
+        }
+        .input-buttons{
+            input{
+                border-radius: 3rem;
+                margin-right: 1rem;
+                border: 1px solid #e6e6e6;
+                height: 2rem;
+                cursor: pointer;
+            }
+            hr{
+                border: 1px solid #e6e6e6;
+            }
+        }
+        .coin-list{
+            table {
+                border-spacing: 0;
+                width: 100%;
+                font-size: 14px;
+                th, td {
+                    text-align: left;
+                    padding: 16px;
+                    border-bottom: 1px solid $hrColor;
+                }
+                .crypto-list{
+                    .coin-name{
+                        margin-left: 15px;
+                    }
+                    .coin-acronym{
+                        font-size: 11px;
+                        margin-left: 20px;
+                    }
+                }
+                
+            }
+              
+        }
+    }
+    .port-body{
+        font-size: $fontSize;
+        .top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .middle{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: 20px;
+            }
+            button{
+                background-color: #7AB52B;
+                color: #fff;
+                border: 1px solid #7AB52B;
+                height: 2.5rem;
+                border-radius: 5px;
+                margin-left: 10px;
+                span{
+                    margin: auto 1rem;
+                }
+            }
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            div{
+                border: 1px solid #CDCDCD;
+                padding: 1rem;
+                margin-left: 10px;
+                box-shadow: 2px 3px #CDCDCD;
+                .p-head{
+                    font-size: 21px;
+                }
+            }
+        }
+        .main-body{
+            margin: 5rem auto;
+            text-align: center;
+        }
+    }
+    .security-body{
+        display: flex;
+        .account-column{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: $fontSize;
+                cursor: pointer;
+                padding: 5px;
+                span{
+                    border: 1px solid $homeGreen;
+                    background-color: $homeGreen;
+                    border-radius: 3px;
+                    font-size: 9px;
+                    color: #fff;
+                }
+            }
+            p:hover{
+                color: $homeGreen;
+            }
+            p:focus{
+                border-left: 2px solid $homeGreen;
+            }
+        }
+        .security-column{
+            display: flex;
+            flex-direction: column;
+            margin: 7px 2rem;
+            p{
+                color: $fontAsh;
+            }
+            input{
+                background-color: #E9ECEF;
+                border: 1px solid #E9ECEF;
+                height: 2rem;
+                outline: none;
+                width: 30rem;
+            }
+            .last-text{
+                width: 50%;
+                color: $fontAsh;
+                font-size: $fontSize;
+            }
+            .subscription-div{
+                border: 1px solid $hrColor;
+                background-color: $hrColor;
+                font-size: 12px;
+                div{
+                    padding: 1.5rem;
+                    span{
+                        margin-right: 10rem;
+                    }
+                    input{
+                        background-color: $homeGreen;
+                        color: #fff;
+                        width: 7rem;
+                        border-radius: 5px;
+                    }
+                }
+                
+            }
+            .reward-div{
+                display: flex;
+                
+                button{
+                    background-color: #fff;
+                    border: 1px solid $homeGreen;
+                    color: $homeGreen;
+                    height: 2rem;
+                    margin: 2rem 9rem;
+                    span{
+                        padding: 2rem;
+                    }
+                }
+                
+            }
+            
+            .security-reward-candy{
+                width: 4rem;
+                animation-name: example;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite; 
+                position: absolute;
+            }
+            @keyframes example {
+                from {width: 3.5rem;}
+                to {width: 4rem;}
+            }
+
+            .reward-books{
+                .reward-books-button{
+                    display: flex;
+                    input{
+                        background-color: #fff;
+                        border: none;
+                        width: fit-content;
+                        margin: auto 1rem;
+                        cursor: pointer;
+                    }
+                    input:focus{
+                        border-bottom: 3px solid $homeGreen;
+                    }
+                }
+                .grid-container{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 1rem;
+                    .grid-div{
+                        cursor: pointer;
+                        .grid-images{
+                            width: 22rem;
+                        }
+                        p{
+                            color: #000;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                
+            }
+            .my-candies-span{
+                border: 1px solid $homeGreen;
+                background-color: $homeGreen;
+                border-radius: 3px;
+                font-size: 14px;
+                color: #fff;
+                margin: auto .7rem;
+            }
+        }
+    }
+    .subscription-plans-body{
+        p, li{
+            font-size: $smallerFont;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            .grid-div{
+                border: 1px solid $fontAsh;
+                height: 50rem;
+                h1{
+                    font-size: 40px;
+                }
+                button{
+                    width: 100%;
+                    border: 1px solid #fff;
+                    height: 3rem;
+                    border-radius: 5px;
+                }
+                hr{
+                    border: 1px solid $hrColor;
+                    margin: 1rem auto;
+                }
+                li{
+                    margin-bottom: .7rem;
+                }
+            }
+        }
+        .faqs{
+            display: flex;
+            justify-content: space-between;
+            .questions, .answers{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .defi-body{
+        .middle{
+            p{
+                font-size: $smallerFont;
+            }
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+            .grid{
+                border: 1px solid $fontAsh;
+                box-shadow: 2px 2px $hrColor;
+                h2, p{
+                    margin: auto .5rem;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+                span{
+                    border: 1px solid $homeGreen;
+                    border-radius: 10px;
+                    background-color: $homeGreen;
+                    color: #fff;
+                    font-size: $fontSize;
+                    margin-right: 1rem;
+                    b{
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.help-page{
+    .help-div{
+        background-color: $homeGreen;
+        color: #fff;
+        div{
+            margin: auto 20rem;
+            padding-top: 1.5rem;
+            input{
+                min-width: 30rem;
+                margin: 1rem auto;
+                height: 3rem;
+                border-radius: 5px;
+                border: 1px solid #fff;
+            }
+        }
+        .help-title{
+            display: flex;
+            img{
+                width: 3rem;
+            }
+        }
+    }
+}
+
+.publications{
+    box-sizing: border-box;
+    .title{
+        display: flex;
+        justify-content: center;
+        margin: 8rem auto;
+        img{
+            width: 3rem;
+            margin-right: 4px;
+        }
+    }
+    .publication-body{
+        text-align: center;
+        .top-body{
+            input{
+                height: 3rem;
+                width: 19rem;
+                margin-right: 5px;
+            }
+            .input-button{
+                background-color: $homeGreen;
+                color: #fff;
+                border: 1px solid $homeGreen;
+            }
+        }
+        .main-body{
+            background-color: $homeGreen;
+            color: #fff;
+            .header{
+                padding: 2rem;
+            }
+            .slide-show{
+                display: flex;
+                justify-content: center;
+                .slides.active{
+                    opacity: 1;
+                    transition-duration: 1s;
+                    transform: scale(1.0);
+                }
+                .slides{
+                    opacity: 0;
+                    transition-duration: 1s;
+                    
+                }
+                .slide-image{
+                    height: 20rem;
+                }
+                .right-arrow{
+                    position: absolute;
+                    top: 90%;
+                    right: 20rem;
+                    font-size: 3rem;
+                    color: #fff;
+                }
+                .left-arrow{
+                    position: absolute;
+                    top: 90%;
+                    left: 20rem;
+                    font-size: 3rem;
+                    color: #fff;
+                }
+            }
+            .button-div{
+                padding: 2rem;
+                button:hover{
+                    background-color: $homeGreen;
+                    color: #fff;
+
+                }
+                button{
+                    height: 3rem;
+                    width: 30rem;
+                    color: $homeGreen;
+                    font-size: 17px;
+                    border: 1px solid #fff;
+                   img{
+                        width: .7rem;
+                        margin-right: 7px;
+                    } 
+                }
+                
+            }
+        }
+        
+    }
+}      
+
+footer{
+    margin: 5rem auto;
+    color: #fff;
+    width: 100%;
+    .disclaimer{
+        background-color: #3F3F3F;
+        p{
+            margin: auto 12rem;
+            text-align: center;
+            font-size: 13px;
+            padding: 2rem 0 2rem  0;
+        }
+    }
+    .main-footer{
+        font-size: 14px;
+        background-color: #303030;
+        .footer-content{
+            margin: auto 12rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0 1rem 0;
+            ul{
+                list-style: none;
+            }
+            .coin-crow{
+                width: 3rem;
+            }
+            .newsletter{
+                 input{
+                    width: 70%;
+                    height: 2rem;
+                    border-radius: 7px;
+                    color: #fff;
+                    outline: none;
+                }
+                button{
+                    width: 6rem;
+                    height: 2rem;
+                    background-color: #000;
+
+                }
+                
+            }
+           
+        }
+        .owner{
+            text-align: center;
+            padding: 0 0 1rem 0;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1500px){
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+    *{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .spinner{
+        margin: 50% auto;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        .top-nav{
+            display: none;
+        }
+        .first-bottom-nav-hr{
+            display: none;
+        }
+    
+        .resources-hover{
+            margin: 5.5rem 31rem;
+        }
+    
+        .products-hover{
+            margin: 5.5rem 35rem;
+        }
+    
+        .community-hover{
+            margin: 5.5rem 41rem;
+        }
+
+        .middle-nav{
+            display: flex;
+            margin: auto 7rem;
+            .coin-crow{
+                width: 1.5rem;
+                position: relative;
+                right: 6rem;
+            }
+            h2{
+                margin-top: 1rem;
+                position: relative;
+                right: 6rem;
+            }
+            ul{
+                position: relative;
+                top: 3rem;
+                right: 15rem;
+                list-style: none;
+                display: flex;
+                font-size: 12px;
+                margin-top: .5rem;
+                li{
+                    margin: 1rem 15px;
+                    cursor: pointer;
+                }
+            }
+            .middle-nav-input{
+                display: none;
+            }
+        }
+        .bottom-nav{
+            display: none;
+        }
+    }
+    .body{
+        margin: auto 1rem;
+       
+        .body-top-buttons{
+            display: none;
+        }
+        .crypto-list{
+            title{
+                margin: 1.5rem auto;
+                padding: 0;
+                h2{
+                    margin: 1rem 0rem;
+                    font-size: $fontSize;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+            }
+           
+        }
+        .body-top-hr{
+            display: none;
+        }
+        .port-body{
+            font-size: $fontSize;
+            .top{
+                margin-top: 8rem;
+                display: flex;
+                justify-content: space-between;
+                .feedback{
+                    display: none;
+                }
+            }
+            .middle{
+                .gadget-div{
+                    display: none;
+                }
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+            }
+            
+        }
+        .subscription-plans-body{
+            margin: 7rem auto;
+            p, li{
+                font-size: $smallerFont;
+            }
+            h2{
+                margin: 1rem auto;
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+                .grid-div{
+                    border: 1px solid $fontAsh;
+                    height: 40rem;
+                    h1{
+                        font-size: 40px;
+                    }
+                    button{
+                        width: 100%;
+                        border: 1px solid #fff;
+                        height: 3rem;
+                        border-radius: 5px;
+                    }
+                    hr{
+                        border: 1px solid $hrColor;
+                        margin: 1rem auto;
+                    }
+                    li{
+                        margin: .7rem .5rem;
+                        list-style: none;
+                    }
+                }
+            }
+            .faqs, .faqs-head{
+                display: none;
+            }
+        }
+    }
+    footer{
+        margin: 5rem auto;
+        color: #fff;
+        width: 100%;
+        .disclaimer{
+            background-color: #3F3F3F;
+            p{
+                margin: auto 0rem;
+                text-align: center;
+                font-size: $smallerFont;
+                padding: 2rem 0 2rem  0;
+            }
+        }
+        div{
+            padding: .2rem;
+        }
+        .main-footer{
+            font-size: $smallerFont;
+            background-color: #303030;
+            .footer-content{
+                margin: auto auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                font-size: 8px;
+                ul{
+                    list-style: none;
+                }
+                .coin-crow{
+                    width: 1.5rem;
+                }
+                .newsletter{
+                     input{
+                        width: 70%;
+                        height: 2rem;
+                        border-radius: 7px;
+                        color: #fff;
+                        outline: none;
+                    }
+                    button{
+                        width: 6rem;
+                        height: 2rem;
+                        background-color: #000;
+    
+                    }
+                    
+                }
+               
+            }
+            .owner{
+                text-align: center;
+                padding: 0 0 1rem 0;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 767px){
+    *{
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    .spinner{
+        margin: 90% auto;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        .top-nav{
+            display: none;
+        }
+        .first-bottom-nav-hr{
+            display: none;
+        }
+    
+        .resources-hover{
+            margin: 24.5rem 6.2rem;
+        }
+    
+        .products-hover{
+            margin: 27.5rem 5.7rem;
+        }
+    
+        .community-hover{
+            margin: 30rem 6.5rem;
+        }
+
+        .middle-nav{
+            display: flex;
+            margin: auto 9rem;
+            .coin-crow{
+              width: 1.5rem;
+              position: absolute;
+              top: 1.4rem;
+              left: 2rem;
+            }
+            h2{
+                margin: 1rem auto;
+                position: absolute;
+                left: 3.5rem;
+            }
+            ul{
+                
+                list-style: none;
+                display: flex;
+                font-size: 12px;
+                position: absolute;
+                top: 3rem;
+                right: 19rem;
+                flex-direction: column;
+                li{
+                    margin: 1rem 15px;
+                    cursor: pointer;
+                }
+            }
+            .middle-nav-input{
+                display: none;
+            }
+        }
+        .bottom-nav{
+            display: none;
+        }
+    }
+    .body{
+        margin: auto 1rem;
+        .body-top-buttons{
+            display: none;
+        }
+        .crypto-list{
+          margin-top: 32rem;
+            title{
+                margin: 1.5rem auto;
+                padding: 0;
+                h2{
+                    margin: 1rem 0rem;
+                    font-size: $fontSize;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+            }
+            .coin-list{
+              .daily-head, .daily-volume-head, .market-cap-head, .daily-sub, .daily-volume-sub, .market-cap-sub{
+                display: none;
+              }
+            }
+        }
+        .body-top-hr{
+            display: none;
+        }
+        .defi-body{
+            margin: 10rem auto;
+            height: fit-content;
+            .middle{
+                h2{
+                    margin: 2rem auto;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 1rem;
+                margin: 5rem auto;
+                .grid{
+                    border: 1px solid $fontAsh;
+                    box-shadow: 2px 2px $hrColor;
+                    h2{
+                        margin: 1rem .5rem;
+                    }
+                    p{
+                        font-size: $smallerFont;
+                        margin: 2rem .5rem;
+                    }
+                    span{
+                        border: 1px solid $homeGreen;
+                        border-radius: 10px;
+                        background-color: $homeGreen;
+                        color: #fff;
+                        font-size: $fontSize;
+                        margin-right: 1rem;
+                        b{
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .port-body{
+            font-size: $fontSize;
+            .top{
+                margin-top: 8rem;
+                display: flex;
+                justify-content: space-between;
+                .feedback{
+                    display: none;
+                }
+            }
+            .middle{
+                .gadget-div{
+                    display: none;
+                }
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+            }
+            
+        }
+        .subscription-plans-body{
+            margin: 7rem auto;
+            p, li{
+                font-size: $smallerFont;
+            }
+            h2{
+                margin: 1rem auto;
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+                .grid-div{
+                    border: 1px solid $fontAsh;
+                    height: 40rem;
+                    h1{
+                        font-size: 40px;
+                    }
+                    button{
+                        width: 100%;
+                        border: 1px solid #fff;
+                        height: 3rem;
+                        border-radius: 5px;
+                    }
+                    hr{
+                        border: 1px solid $hrColor;
+                        margin: 1rem auto;
+                    }
+                    li{
+                        margin: .7rem .5rem;
+                        list-style: none;
+                    }
+                }
+            }
+            .faqs, .faqs-head{
+                display: none;
+            }
+        }
+    }
+    footer{
+        margin: 5rem auto;
+        color: #fff;
+        width: 100%;
+        .disclaimer{
+            background-color: #3F3F3F;
+            p{
+                margin: auto 0rem;
+                text-align: center;
+                font-size: $smallerFont;
+                padding: 2rem 0 2rem  0;
+            }
+        }
+        div{
+            padding: .2rem;
+        }
+        .main-footer{
+            font-size: $smallerFont;
+            background-color: #303030;
+            .footer-content{
+                margin: auto auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                font-size: 8px;
+                ul{
+                    list-style: none;
+                }
+                .coin-crow{
+                    width: 1.5rem;
+                }
+                .newsletter{
+                     input{
+                        width: 70%;
+                        height: 2rem;
+                        border-radius: 7px;
+                        color: #fff;
+                        outline: none;
+                    }
+                    button{
+                        width: 6rem;
+                        height: 2rem;
+                        background-color: #000;
+    
+                    }
+                    
+                }
+               
+            }
+            .owner{
+                text-align: center;
+                padding: 0 0 1rem 0;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 424px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .spinner{
+        margin: 90% auto;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        .top-nav{
+            display: none;
+        }
+        .first-bottom-nav-hr{
+            display: none;
+        }
+
+        .resources-hover{
+            margin: 24.5rem 5.9rem;
+        }
+    
+        .products-hover{
+            margin: 27.5rem 5.4rem;
+        }
+    
+        .community-hover{
+            margin: 30rem 6.2rem;
+        }
+    
+        .middle-nav{
+            display: flex;
+            margin: auto 1rem;
+            .coin-crow{
+              width: 1.5rem;
+              position: absolute;
+              top: 1.4rem;
+              left: 2rem;
+            }
+            h2{
+                margin: 1rem auto;
+                position: absolute;
+                left: 3.5rem;
+            }
+            ul{
+                
+                list-style: none;
+                display: flex;
+                font-size: 12px;
+                margin-top: 3rem;
+                margin-right: 20rem;
+                flex-direction: column;
+                li{
+                    margin: 1rem 15px;
+                    cursor: pointer;
+                }
+            }
+            .middle-nav-input{
+                display: none;
+            }
+        }
+        .bottom-nav{
+            display: none;
+        }
+    }
+    .body{
+        margin: auto 1rem;
+        .body-top-buttons{
+            display: none;
+        }
+        .crypto-list{
+            title{
+                margin: 1.5rem auto;
+                padding: 0;
+                h2{
+                    margin: 1rem 0rem;
+                    font-size: $fontSize;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+            }
+            .coin-list{
+                th, td{
+                    font-size: $smallerFont;
+                }
+                .daily-head, .daily-volume-head, .market-cap-head, .daily-sub, .daily-volume-sub, .market-cap-sub{
+                  display: none;
+                }
+            }
+        }
+        .body-top-hr{
+            display: none;
+        }
+        .defi-body{
+            margin: 10rem auto;
+            height: fit-content;
+            .middle{
+                h2{
+                    margin: 2rem auto;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 1rem;
+                margin: 5rem auto;
+                .grid{
+                    border: 1px solid $fontAsh;
+                    box-shadow: 2px 2px $hrColor;
+                    h2{
+                        margin: 1rem .5rem;
+                    }
+                    p{
+                        font-size: $smallerFont;
+                        margin: 2rem .5rem;
+                    }
+                    span{
+                        border: 1px solid $homeGreen;
+                        border-radius: 10px;
+                        background-color: $homeGreen;
+                        color: #fff;
+                        font-size: $fontSize;
+                        margin-right: 1rem;
+                        b{
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .port-body{
+            font-size: $fontSize;
+            .top{
+                margin-top: 8rem;
+                display: flex;
+                justify-content: space-between;
+                .feedback{
+                    display: none;
+                }
+            }
+            .middle{
+                .gadget-div{
+                    display: none;
+                }
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+            }
+            
+        }
+        .subscription-plans-body{
+            margin: 7rem auto;
+            p, li{
+                font-size: $smallerFont;
+            }
+            h2{
+                margin: 1rem auto;
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+                .grid-div{
+                    border: 1px solid $fontAsh;
+                    height: 40rem;
+                    h1{
+                        font-size: 40px;
+                    }
+                    button{
+                        width: 100%;
+                        border: 1px solid #fff;
+                        height: 3rem;
+                        border-radius: 5px;
+                    }
+                    hr{
+                        border: 1px solid $hrColor;
+                        margin: 1rem auto;
+                    }
+                    li{
+                        margin: .7rem .5rem;
+                        list-style: none;
+                    }
+                }
+            }
+            .faqs, .faqs-head{
+                display: none;
+            }
+        }
+    }
+    footer{
+        margin: 5rem auto;
+        color: #fff;
+        width: 100%;
+        .disclaimer{
+            background-color: #3F3F3F;
+            p{
+                margin: auto 0rem;
+                text-align: center;
+                font-size: $smallerFont;
+                padding: 2rem 0 2rem  0;
+            }
+        }
+        div{
+            padding: .2rem;
+        }
+        .main-footer{
+            font-size: $smallerFont;
+            background-color: #303030;
+            .footer-content{
+                margin: auto auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                font-size: 8px;
+                ul{
+                    list-style: none;
+                }
+                .coin-crow{
+                    width: 1.5rem;
+                }
+                .newsletter{
+                     input{
+                        width: 70%;
+                        height: 2rem;
+                        border-radius: 7px;
+                        color: #fff;
+                        outline: none;
+                    }
+                    button{
+                        width: 6rem;
+                        height: 2rem;
+                        background-color: #000;
+    
+                    }
+                    
+                }
+               
+            }
+            .owner{
+                text-align: center;
+                padding: 0 0 1rem 0;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 374px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .spinner{
+        margin: 90% auto;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        .top-nav{
+            display: none;
+        }
+        .first-bottom-nav-hr{
+            display: none;
+        }
+
+        .resources-hover{
+            margin: 24.5rem 6.1rem;
+        }
+    
+        .products-hover{
+            margin: 27.5rem 5.7rem;
+        }
+    
+        .community-hover{
+            margin: 30rem 6.4rem;
+        }
+    
+    
+        .middle-nav{
+            display: flex;
+            margin: auto 1rem;
+            .coin-crow{
+              width: 1.5rem;
+              position: absolute;
+              top: 1.4rem;
+              left: 2rem;
+            }
+            h2{
+                margin: 1rem auto;
+                position: absolute;
+                left: 3.5rem;
+            }
+            ul{
+                
+                list-style: none;
+                display: flex;
+                font-size: 12px;
+                margin-top: 3rem;
+                margin-right: 20rem;
+                flex-direction: column;
+                li{
+                    margin: 1rem 20px;
+                    cursor: pointer;
+                }
+            }
+            .middle-nav-input{
+                display: none;
+            }
+        }
+        .bottom-nav{
+            display: none;
+        }
+    }
+    .body{
+        margin: auto 1rem;
+        .body-top-buttons{
+            display: none;
+        }
+        .crypto-list{
+            title{
+                margin: 1.5rem auto;
+                padding: 0;
+                h2{
+                    margin: 1rem auto;
+                    font-size: $fontSize;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+            }
+            .coin-list{
+                th, td{
+                    font-size: $smallerFont;
+                }
+                .index-head, .price-head, .daily-volume-head, .market-cap-head, .index-sub, .price-sub, .daily-volume-sub, .market-cap-sub{
+                  display: none;
+                }
+            }
+        }
+        .body-top-hr{
+            display: none;
+        }
+        .defi-body{
+            margin: 10rem auto;
+            height: fit-content;
+            .middle{
+                h2{
+                    margin: 2rem auto;
+                }
+                p{
+                    font-size: $smallerFont;
+                }
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 1rem;
+                margin: 5rem auto;
+                .grid{
+                    border: 1px solid $fontAsh;
+                    box-shadow: 2px 2px $hrColor;
+                    h2{
+                        margin: 1rem .5rem;
+                    }
+                    p{
+                        font-size: $smallerFont;
+                        margin: 2rem .5rem;
+                    }
+                    span{
+                        border: 1px solid $homeGreen;
+                        border-radius: 10px;
+                        background-color: $homeGreen;
+                        color: #fff;
+                        font-size: $fontSize;
+                        margin-right: 1rem;
+                        b{
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .port-body{
+            font-size: $fontSize;
+            .top{
+                margin-top: 8rem;
+                display: flex;
+                justify-content: space-between;
+                .feedback{
+                    display: none;
+                }
+            }
+            .middle{
+                .gadget-div{
+                    display: none;
+                }
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+            }
+            
+        }
+        .subscription-plans-body{
+            margin: 7rem auto;
+            p, li{
+                font-size: $smallerFont;
+            }
+            h2{
+                margin: 1rem auto;
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1rem;
+                .grid-div{
+                    border: 1px solid $fontAsh;
+                    height: 40rem;
+                    h1{
+                        font-size: 40px;
+                    }
+                    button{
+                        width: 100%;
+                        border: 1px solid #fff;
+                        height: 3rem;
+                        border-radius: 5px;
+                    }
+                    hr{
+                        border: 1px solid $hrColor;
+                        margin: 1rem auto;
+                    }
+                    li{
+                        margin: .7rem .5rem;
+                        list-style: none;
+                    }
+                }
+            }
+            .faqs, .faqs-head{
+                display: none;
+            }
+        }
+    }
+    footer{
+        margin: 5rem auto;
+        color: #fff;
+        width: 100%;
+        .disclaimer{
+            background-color: #3F3F3F;
+            p{
+                margin: auto 1rem;
+                text-align: center;
+                font-size: $smallerFont;
+                padding: 2rem 0 2rem  0;
+            }
+        }
+        div{
+            padding: .5rem;
+        }
+        .main-footer{
+            font-size: 14px;
+            background-color: #303030;
+            .footer-content{
+                margin: auto auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0 1rem 0;
+                font-size: 8px;
+                ul{
+                    list-style: none;
+                }
+                .coin-crow{
+                    width: 1.5rem;
+                }
+                .newsletter{
+                     input{
+                        width: 70%;
+                        height: 2rem;
+                        border-radius: 7px;
+                        color: #fff;
+                        outline: none;
+                    }
+                    button{
+                        width: 6rem;
+                        height: 2rem;
+                        background-color: #000;
+    
+                    }
+                    
+                }
+               
+            }
+            .owner{
+                text-align: center;
+                padding: 0 0 1rem 0;
+            }
+        }
+    }
+}
